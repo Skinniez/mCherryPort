@@ -1,0 +1,105 @@
+/*! color palette https://colorhunt.co/palette/e0f4ff87c4ff39a7ffffeed9 */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #E0F4FF;
+}
+
+header {
+    background: #E0F4FF;
+    padding: 5px 0;
+    box-shadow: 0 1px 2px #39A7FF;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    padding: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+}
+
+.section {
+    padding: 20px;
+    text-align: center;
+}
+
+.text-content {
+    margin: 20px 0;
+}
+
+.learn-more, .contact-link {
+    display: inline-block;
+    text-decoration: none;
+    color: #0066cc;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.learn-more:hover, .contact-link:hover {
+    background-color: #FFEED9;
+}
+
+footer {
+    background: #E0F4FF;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+    }
+    .nav-links li {
+        padding: 5px 0;
+    }
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Splits the grid into two equal columns */
+  gap: 20px; /* Adjust the gap as needed */
+  align-items: center;
+  padding: 20px;
+}
+
+.image-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px; /* Optional: if you want rounded corners on images */
+}
+
+/* Responsive adjustment */
+@media (max-width: 768px) {
+  .grid-container {
+      grid-template-columns: 1fr; /* Stack the columns on top of each other on smaller screens */
+  }
+}
+
+.logoSpace {
+    scale:20%;
+}
+
